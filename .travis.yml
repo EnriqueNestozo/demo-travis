@@ -1,15 +1,17 @@
 language: node_js
 node_js:
-  - 8
+- 8
 before_install:
-  - npm i -g firebase-tools
+- npm i -g firebase-tools
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - yarn run build
+- yarn run build
 deploy:
   provider: firebase
   project: react-app
   skip_cleanup: true
-  token: M5Rv/ActchHgOp1P9hDrvuEJojGo+qjJjjnScQ5No0bI4IRRJdcXexJmCkSF8RA3B6VjfDf0t7OQSCyiH9UAyncYilnxwR5usjUsmFdJN/HZbOZK/NZlN9vvj6bMDgHS418JRCnb/lA98DEoSk86ds1vBDiRT22ozAkbpJD62Y9Wq6YrcU0E5uG1Evn2Sw9+tDdFsn0nF9grqBlNanac/NNB2h1RXe5ZvtK9WWzcjeQ7BqQirmsahQLHkcLtDzknlXFk7HOfKaD/Qu0wT5WYH2QLwvcJV+eSXVEeGP15hVx+ZqighiLTfttZt/37FXEyRIVHjEnHyTlpqEM/kT7opcfqNMQLGQLz5hGtmEbwVMt0ay4xrgwvp0+DhxK2upsZ1k0FQQi8cTDR7FjSTw9XH15EzEAvrhRv9H3i+CYyjfYxPGh4BSCngk4ELjJKnGBz6nIgIyDcpg2p9JTlMOK78Fva1Yw1r/y+PkZOf5zZinYiyK/ZzDMevwd0LQmb5+lSPaMzGOn/hwuuIZXSaPzQK+eEtlOG2llM5ZTzfDSd9T32/GCKP4lfmVMOwbbH4e2oaIMLJMnEVJwvRzgvtA8Y/mVNCUg+jPNPm9lbtsL7S0keVH5ttG5DVorA+yZ8HNulO/C+g/GN0H6LD637dVd+b+VPYNMz65dU/qi4DOxiNvY=
+env:
+  global:
+    - secure: Qjqz+RgSReIm/1OXWzwPrLj6ot9mcDJ9OJNjYBjhpy30R1xg39qzUUl2mDR1MEn9Ax3Fu240RYRLWsf47uXImG5ShRwrwV5zNRH6lZkUP0Ppz2OdPx0wHyuzbsaSuc5WprTZleE5hP8jat8WxXtlYU1A20noEidkJzel1cZAL4yi+hGfQcLUCaqEJ7BCNgTdgpbLTBUU5cqZAq+oRZpmI4KznyBAr7Y0LxwvIQEaBOT74O3DUbc7jTGwQvsX0AiH0c77wkI+KEv0PjA0HxQBeHY6sloO+9k5B8YDByAImlYPg33HKvVd8nMRwVRfMmUr7ZynkwOo7pFieu/9bkjLo2n0pCuU+PtmobEDg7YtXyA9e0Tic/rrmxv6my3HFnTzRs3+JqXY5sHU3dQTe+L2O9gmB/DNm/r9Cm+ZMHnO5CNG7FfrVdiXxocyDYCMvT8ORlJf3NXqd9E/XI7hljGR2Gr9p5OqJWT29Th8rf5pcpWZvROPY1fk7yI7xiaXfvib3ExJIFV1Il0b3brm0OUmBRCdtz6GsLBPjUJnAYp8adcpjyJLq1DeMz30wVUVZPpbXeHwwCm1rhwwepYbOEk4M1pAEkq+weXmVpu9JzVdtJ2PRzMnG7FZwL+l8LqHXQaIIhWMaj0/F/HFLftQQldw6zpOenTFg69D8Jv9K136f8o=
